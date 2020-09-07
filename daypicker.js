@@ -94,7 +94,14 @@
     isWeekend = function(date)
     {
         var day = date.getDay();
-        return day !=== 4;
+        //this way only fridays
+        return day === 0, day === 1, day === 2, day === 3, day === 4, day === 6;
+        // alt solution to test for only fridays is : 
+        /* return day !=== 5;*/
+       // this way only thursday
+        /* return day === 0, day === 1, day === 2, day === 3, day === 5, day === 6; */
+       // alt solution to test for only thursday is : 
+        /* return day !=== 4;*/
     },
 
     isLeapYear = function(year)
