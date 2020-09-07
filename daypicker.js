@@ -1,8 +1,4 @@
-/*!
- * Pikaday
- *
- * Copyright Â© 2014 David Bushell | BSD & MIT license | https://github.com/Pikaday/Pikaday
- */
+//
 
 (function (root, factory)
 {
@@ -95,13 +91,8 @@
     {
         var day = date.getDay();
         //this way only fridays
-        return day === 0, day === 1, day === 2, day === 3, day === 4, day === 6;
-        // alt solution to test for only fridays is : 
-        /* return day !=== 5;*/
-       // this way only thursday
-        /* return day === 0, day === 1, day === 2, day === 3, day === 5, day === 6; */
-       // alt solution to test for only thursday is : 
-        /* return day !=== 4;*/
+        return day !== 4 /*&& day !== 4*/;
+        //  day == 4 || day == 3 || (...) 
     },
 
     isLeapYear = function(year)
@@ -1262,3 +1253,4 @@
 
     return Pikaday;
 }));
+
