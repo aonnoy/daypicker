@@ -94,7 +94,7 @@
     {
         var day = date.getDay();
         //this way only fridays
-        return day !== 4 /*&& day !== 4*/;
+        return day !== 5 /*&& day !== 4*/;
         //  day == 4 || day == 3 || (...) 
     },
 
